@@ -1,0 +1,48 @@
+body {
+    background-image: url("../images/board.jpeg");
+    background-size: 1536px 864px;
+    color: darkblue;
+    font-family: "Impact"
+}
+
+header {
+    background: linear-gradient(to bottom right, teal, magenta);
+    border-bottom: 3px double gold;
+    color: gold;
+}
+
+label, #main-title {
+    border: 2px solid blue;
+    background-color: gold;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.gif-container {
+    border-radius: 25px;
+    border: 3px solid darkmagenta;
+    background: linear-gradient(to bottom right, goldenrod, green)
+}
+
+#gif-announce {
+    color: darkmagenta;
+    border-radius: 100%;
+    background: radial-gradient(lightgreen, yellow);
+}
+
+.gif {
+    cursor: pointer;
+}
+
+#rating, #source {
+    background-color: pink;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #666666;
+    height: 40px;
+}

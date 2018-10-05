@@ -1,0 +1,52 @@
+Overview
+1. create static html elements
+2. make buttons and display to buttons section
+3. ajax code with button on click to retrieve corresponding gifs
+4. display gifs with their ratings to gif section
+5. add to topics with user input
+6. code to toggle between animated/static gifs
+
+Script
+
+topics array = [stuff]
+
+make button function:
+    clear button displays
+    iterate over topics array:
+        create a button div
+        assign topic a topic-btn class
+        assign topic a data-name attribute with its name as value
+        append button to button display div
+
+button on click:
+    initialize variable for topic name
+    initialize queryurl variable using topic name
+    ajax call:
+        query url
+        method
+        promise:
+            console log response
+            iterate over each datum (gif):
+            create div
+            create paragraph and image div for rating and gif, respectively
+            create and set src attr of image div to corresponding path of response as static image
+            create and set still and animated data* attributes and a state attribute
+            append image and p to created div container
+            prepend div to gif display container
+
+topic input on submission:
+    push input into topics array
+    calls make button function
+
+gif on click:
+    retrieve data state
+    switch between static and animated sourch path
+    switch data state 
+
+call make button function for default buttons to appear initially
+
+?metadata tag
+?download
+?multiple apis
+
+?ask about img disappearing
