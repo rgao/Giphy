@@ -43,18 +43,10 @@ $(document).ready(function() {
                 var gifRating = $("<p class='mt-2' id='rating'>").text("Rating: " + result[j].rating);
                 var gifSource = $("<p id='source'>").text("Source: " + result[j].source_tld);
 
-                var dlDiv = $("<a>");
-                dlDiv.attr("href", result[j].images.fixed_height.url);
-                dlDiv.attr("download", true);
-                var dlBtn = $("<button class='btn fa fa-download btn-danger mb-2'>");
-                dlBtn.text(" Download");
-                dlDiv.append(dlBtn);
-
                 gifDiv.append(gifTitle);
                 gifDiv.append(image);
                 gifDiv.append(gifRating);
                 gifDiv.append(gifSource);
-                gifDiv.append(dlDiv);
                 $(".gif-display").prepend(gifDiv);
             };
         });
